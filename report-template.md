@@ -56,10 +56,6 @@ Given more time, I'd focus primarily on enhancing the features. This involves ex
 |hpo|0.05|300|30|20|0.52244|
 |hpo1|0.021|370|42|25|0.5122|
 
-| Column 1 | Column 2 | Column 3 |
-|----------|----------|----------|
-| Row 1    | Data 1   | Data 2   |
-| Row 2    | Data 3   | Data 4   |
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
