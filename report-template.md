@@ -50,7 +50,7 @@ Given more time, I'd focus primarily on enhancing the features. This involves ex
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|learning_rate|num_boost_round|num_leaves|min_data_in_leaf|score|
-|--|--|--|--|--|
+|--|--|--|--|--|--|
 |initial|default|default|default|default|1.78837|
 |add_features|Default|Default|Default|default|0.6928|
 |hpo|0.05|300|30|20|0.52244|
