@@ -59,15 +59,14 @@ Given more time, I'd focus primarily on enhancing the features. This involves ex
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
-TODO: Replace the image below with your own.
-
 ![model_train_score.png](img/model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-TODO: Replace the image below with your own.
-
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
-TODO: Add your explanation
+
+**Model test score graph**
+The data shows how a model's score improved in a Kaggle competition through different steps. At first, the model got a score of 1.79937 using basic data. Adding more details to the model helped a lot, dropping the score to 0.69288. Fine-tuning the settings (hyperparameter optimization) made the model even better, first lowering the score to 0.52244 and then a bit more to 0.5122. The biggest jump in performance came from adding new details, while further fine-tuning brought smaller, gradual improvements.
+
