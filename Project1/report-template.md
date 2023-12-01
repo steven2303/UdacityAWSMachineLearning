@@ -11,15 +11,15 @@ The WeightedEnsemble_L3 model emerged as the top performer in the AutoGluon trai
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
 
-- Temperature Insights:
+![model_train_score.png](img/HeatMap.png)
 
-The average temperature (temp) is around 20.23°C, with a mean "feels like" temperature (atemp) of 23.66°C.
-The data varies from a low of 0.82°C to a high of 41°C, indicating a wide range of weather conditions.
+From the heatmap analysis, we see that certain factors are more closely related to the number of bicycles being rented. For instance, temperature and wind speed seem to have a significant impact. When the temperature goes up, the number of rented bicycles tends to increase as well, showing a correlation of 0.39. The same goes for wind speed, but its effect is smaller, with a correlation of 0.1.
 
-- Humidity and Wind Speed:
+On the other hand, humidity has the opposite effect. Higher humidity levels seem to correlate with fewer bicycle rentals, with a correlation of -0.32, indicating a significant inverse relationship.
 
-The average humidity is around 61.89%, with some days having very low humidity and others reaching 100%.
-The wind speed varies significantly, ranging from calm to very windy conditions (up to 57 km/h).
+In summary, this analysis tells us that temperature, wind speed, and humidity are important factors that should be considered when predicting bicycle rental numbers.
+
+
 
 Based on these insights, additional features were added to better capture trends and patterns in the data:
 
