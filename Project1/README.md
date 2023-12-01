@@ -24,7 +24,7 @@ The goal of this project is to predict bike sharing demand using AutoGluon, a po
    
 ```python   
 pip install -U pip setuptools wheel mxnet<2.0.0 bokeh==2.0.1 autogluon kaggle pandas dask lightgbm
-
+```
 ### Kaggle API Setup
 
 1. Create a Kaggle account.
