@@ -84,4 +84,8 @@ The model's Kaggle score improved from 1.79937 to 0.69288 with additional featur
 
 ## Summary
 
-This was our first time participating in a Kaggle competition. We started by gathering the data and ended with submitting our predictions to see how well we did. Throughout this process, we got a real sense of what machine learning involves. We learned the significance of exploratory analysis in understanding our data and improving our models. Additionally, we realized the importance of fine-tuning hyperparameters and evaluating performance to select the best candidate model. This experience gave us practical insights into the steps and considerations essential in a machine learning project.
+Our first time in a Kaggle competition was a real eye-opener into practical machine learning. We started by getting the data and ended with submitting our predictions to see how good our model was. This whole experience showed us how complex and varied machine learning can be.
+
+A key lesson for us was how important it is to really look into the data before jumping into modeling. This step, called exploratory data analysis, let us get to know our data better and make our models stronger. We also learned about tweaking hyperparameters – these are settings that can make a big difference in how well a model works. 
+
+We got to learn a lot more than just theory – it was a chance to get our hands dirty with real machine learning work, giving us a much better understanding of how it all comes together.
