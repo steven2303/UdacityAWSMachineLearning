@@ -84,7 +84,7 @@ The model's Kaggle score improved from 1.79937 to 0.69288 with additional featur
 
 ## Summary
 
-Our first time in a Kaggle competition was a real eye-opener into practical machine learning. We started by getting the data and ended with submitting our predictions to see how good our model was. This whole experience showed us how complex and varied machine learning can be.
+This project was a real eye-opener into practical machine learning. We started by getting the data and ended with submitting our predictions to see how good our model was. This whole experience showed us how complex and varied machine learning can be.
 
 A key lesson for us was how important it is to really look into the data before jumping into modeling. This step, called exploratory data analysis, let us get to know our data better and make our models stronger. We also learned about tweaking hyperparameters – these are settings that can make a big difference in how well a model works. 
 
