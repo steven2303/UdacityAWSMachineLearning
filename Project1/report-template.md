@@ -46,7 +46,7 @@ This improvement can be attributed to several factors:
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-Post hyperparameter tuning, the WeightedEnsemble_L3 model's score improved to -30.347579 from -52.796196. 
+After experimenting with different hyperparameters, the model's performance improved significantly. The top model, **WeightedEnsemble_L3**, achieved a score of -30.347579, which is a marked improvement over the previous best score of -52.796196. 
 
 This improvement can be attributed to several factors related to hyperparameter tuning:
 
