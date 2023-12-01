@@ -84,4 +84,4 @@ The model's Kaggle score improved from 1.79937 to 0.69288 with additional featur
 
 ## Summary
 
-
+This was our first time participating in a Kaggle competition. We started by gathering the data and ended with submitting our predictions to see how well we did. Throughout this process, we got a real sense of what machine learning involves. We learned the significance of exploratory analysis in understanding our data and improving our models. Additionally, we realized the importance of fine-tuning hyperparameters and evaluating performance to select the best candidate model. This experience gave us practical insights into the steps and considerations essential in a machine learning project.
