@@ -46,12 +46,7 @@ This improvement can be attributed to several factors:
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-After experimenting with different hyperparameters, the model's performance improved significantly. The top model, **WeightedEnsemble_L3**, achieved a score of -30.347579, which is a marked improvement over the previous best score of -52.796196. 
-
-This improvement can be attributed to several factors related to hyperparameter tuning:
-
-- By tuning hyperparameters, you can find more optimal settings that lead to better model performance.
-- Tuning hyperparameters can prevent models from becoming too complex and overfitting the training data.
+After experimenting with different hyperparameters, the model's performance improved significantly. The top model, **WeightedEnsemble_L3**, achieved a score of -30.347579, which is a marked improvement over the previous best score of -52.796196. This improvement can be attributed to several factors related to hyperparameter tuning:
 
 **Detailed Analysis of Hyperparameter Influence**
 
