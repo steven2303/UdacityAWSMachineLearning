@@ -17,17 +17,23 @@ From the heatmap analysis, we see that certain factors are more closely related 
 
 On the other hand, humidity has the opposite effect. Higher humidity levels seem to correlate with fewer bicycle rentals, with a correlation of -0.32, indicating a significant inverse relationship.
 
-In summary, this analysis tells us that temperature, wind speed, and humidity are important factors that should be considered when predicting bicycle rental numbers.
+In summary, this analysis tells us that temperature, wind speed, and humidity are important factors that should be considered when predicting bicycle rental numbers. 
 
+![model_train_score.png](img/Temp_vs_BikeRentals.png)
+Your observation indicates that in your dataset, there's a positive correlation between temperature and the number of bicycles rented. This means as the temperature increases, the bike rental counts also tend to increase. Such a trend is reasonable and aligns with intuitive expectations – in warmer weather conditions, outdoor activities like bicycling become more appealing, leading to an increase in bike rentals.
 
+![model_train_score.png](img/Humidity_vs_BikeRentals.png)
+If in your dataset you're observing an opposite trend with humidity – that is, bike rentals decrease as humidity increases – this is also a logical and expected pattern. High humidity often makes outdoor activities less comfortable, which can lead to a decrease in the number of bicycles rented. Here are some implications and considerations for this observation:
 
-Based on these insights, additional features were added to better capture trends and patterns in the data:
+Based on what we've learned from the data, we're going to add some new features (or categories) to help us understand it better. These are:
 
-Temperature Categories: The temperature was categorized into 'hot', 'mild', and 'cold' to simplify analysis and model temperature effects more clearly.
+**Temperature Categories:** We'll group temperatures into different buckets like 'cold', 'mild', and 'hot'. This way, we can easily see how bike rentals change with different kinds of weather. For example, do more people rent bikes when it's hot?
 
-Wind Speed Categories: Wind speed was categorized into 'very windy' and 'mild wind' to understand its impact on rentals better.
+**Wind Speed Categories:** We'll also categorize how windy it is. Maybe categories like 'calm', 'breezy', and 'windy' can help us figure out if people prefer biking on less windy days.
 
-Humidity Categories: Humidity was categorized as 'very humid' and 'not humid' to see if extreme humidity levels affect rental behavior.
+**Humidity Categories:** Since we noticed that humidity affects bike rentals, we'll create groups like 'low humidity', 'moderate humidity', and 'high humidity'. This can show us if people avoid renting bikes when it's too humid.
+
+By doing this, we make our data simpler to look at and can understand better how different weather conditions affect bike rentals. This can help us plan better for things like how many bikes we need ready on different days, or when we might need more staff around.
 
 ### How much better did your model preform after adding additional features and why do you think that is?
 After adding the additional features, the model's performance improved significantly. The top model, WeightedEnsemble_L3, achieved a score of -30.347579, compared to -52.796196 previously. 
