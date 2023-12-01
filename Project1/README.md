@@ -22,6 +22,7 @@ The goal of this project is to predict bike sharing demand using AutoGluon, a po
 2. Ensure you have Jupyter Notebook installed.
 3. Install required packages:
    
+```python   
 pip install -U pip setuptools wheel mxnet<2.0.0 bokeh==2.0.1 autogluon kaggle pandas dask lightgbm
 
 ### Kaggle API Setup
