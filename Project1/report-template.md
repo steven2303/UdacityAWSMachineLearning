@@ -68,13 +68,13 @@ Given more time, I'd focus primarily on enhancing the features. This involves ex
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
 ![model_train_score.png](img/model_train_score.png)
+In the beginning, with our basic setup, the score was -52.83. But when we added some new variables, things got better, and our score improved to -30.245. Then, we tried hyperparameter tuning, and the score changed to -32.74. Interestingly, this score is a bit worse than when we just added new variables. This could mean that our model was getting too tailored to our training data and might not do as well with new, unseen data – a situation we often refer to as overfitting.
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
 ![model_test_score.png](img/model_test_score.png)
+The data shows how a model's score improved in a Kaggle competition through different steps. At first, the model got a score of 1.79937 using basic data. Adding more details to the model helped a lot, dropping the score to 0.69288. Fine-tuning the settings (hyperparameter optimization) made the model even better, first lowering the score to 0.52244 and then a bit more to 0.5122.
 
 ## Summary
 
-**Model test score graph**
-The data shows how a model's score improved in a Kaggle competition through different steps. At first, the model got a score of 1.79937 using basic data. Adding more details to the model helped a lot, dropping the score to 0.69288. Fine-tuning the settings (hyperparameter optimization) made the model even better, first lowering the score to 0.52244 and then a bit more to 0.5122. The biggest jump in performance came from adding new details, while further fine-tuning brought smaller, gradual improvements.
 
