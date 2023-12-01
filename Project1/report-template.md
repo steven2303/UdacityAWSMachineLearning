@@ -6,7 +6,7 @@
 When predicting how many bikes are rented, it doesn't make sense to end up with negative numbers. The smallest amount you can rent out is zero. So, if your prediction says you're renting out a negative number of things, that's a problem because it's not possible in real life. That's why we are replacing negative values with zero in our predictions.
 
 ### What was the top ranked model that performed?
-The WeightedEnsemble_L3 model emerged as the top performer in the AutoGluon training, achieving the highest score of -52.796196.
+Utilizing AutoGluon's leaderboard() functions, the WeightedEnsemble_L3 model emerged as the top performer in the AutoGluon training, achieving the highest score of -52.796196.
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
@@ -46,12 +46,20 @@ This improvement can be attributed to several factors:
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-After experimenting with different hyperparameters, the model's performance improved significantly. The top model, **WeightedEnsemble_L3**, achieved a score of -30.347579, which is a marked improvement over the previous best score of -52.796196.
+Post hyperparameter tuning, the WeightedEnsemble_L3 model's score improved to -30.347579 from -52.796196. 
 
 This improvement can be attributed to several factors related to hyperparameter tuning:
 
 - By tuning hyperparameters, you can find more optimal settings that lead to better model performance.
 - Tuning hyperparameters can prevent models from becoming too complex and overfitting the training data.
+
+Each hyperparameter adjustment played a specific role in model enhancement. For instance:
+
+- Reducing the **learning_rate** made the model training more gradual and precise.
+- Increasing **num_boost_round** allowed the model to learn more from the data.
+- Adjusting **num_leaves** and **min_data_in_leaf** helped in better capturing data complexities while avoiding overfitting.
+
+These changes collectively enhanced the model's ability to generalize better to unseen data.
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
 Given more time, I'd focus primarily on enhancing the features. This involves exploring deeper connections in the data and creating new ones. Particularly for a rental dataset, analyzing time-based patterns, like changes in rental trends over different seasons or past behaviors, would be a key area of focus.
@@ -69,13 +77,13 @@ Given more time, I'd focus primarily on enhancing the features. This involves ex
 
 ![model_train_score.png](img/model_train_score.png)
 
-In the beginning, with our basic setup, the score was -52.83. But when we added some new variables, things got better, and our score improved to -30.245. Then, we tried hyperparameter tuning, and the score changed to -32.74. Interestingly, this score is a bit worse than when we just added new variables. This could mean that our model was getting too tailored to our training data and might not do as well with new, unseen data – a situation we often refer to as overfitting.
+Initially, the score was -52.83, which improved to -30.245 with new variables, and then to -32.74 with hyperparameter tuning. The slight deterioration in the score after hyperparameter tuning suggests possible overfitting.
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
 ![model_test_score.png](img/model_test_score.png)
 
-The data shows how a model's score improved in a Kaggle competition through different steps. At first, the model got a score of 1.79937 using basic data. Adding more details to the model helped a lot, dropping the score to 0.69288. Fine-tuning the settings (hyperparameter optimization) made the model even better, first lowering the score to 0.52244 and then a bit more to 0.5122.
+The model's Kaggle score improved from 1.79937 to 0.69288 with additional features and further to 0.52244 and 0.5122 with hyperparameter optimization, indicating the effectiveness of these enhancements.
 
 ## Summary
 
