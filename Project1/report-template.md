@@ -19,11 +19,13 @@ On the other hand, humidity has the opposite effect. Higher humidity levels seem
 
 In summary, this analysis tells us that temperature, wind speed, and humidity are important factors that should be considered when predicting bicycle rental numbers. 
 
+Now that we've got these findings, let's dig a bit deeper into some of these variables to get a clearer picture.
+
 ![model_train_score.png](img/Temp_vs_BikeRentals.png)
-Your observation indicates that in your dataset, there's a positive correlation between temperature and the number of bicycles rented. This means as the temperature increases, the bike rental counts also tend to increase. Such a trend is reasonable and aligns with intuitive expectations – in warmer weather conditions, outdoor activities like bicycling become more appealing, leading to an increase in bike rentals.
+As the temperature increases, the bike rental counts also tend to increase. Such a trend is reasonable and aligns with intuitive expectations – in warmer weather conditions, outdoor activities like bicycling become more appealing, leading to an increase in bike rentals.
 
 ![model_train_score.png](img/Humidity_vs_BikeRentals.png)
-If in your dataset you're observing an opposite trend with humidity – that is, bike rentals decrease as humidity increases – this is also a logical and expected pattern. High humidity often makes outdoor activities less comfortable, which can lead to a decrease in the number of bicycles rented. Here are some implications and considerations for this observation:
+Bike rentals decrease as humidity increases – this is also a logical and expected pattern. High humidity often makes outdoor activities less comfortable, which can lead to a decrease in the number of bicycles rented.
 
 Based on what we've learned from the data, we're going to add some new features (or categories) to help us understand it better. These are:
 
