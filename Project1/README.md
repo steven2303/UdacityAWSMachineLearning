@@ -1,4 +1,4 @@
-# README.md for Bike Sharing Demand Prediction Script
+# Bike Sharing Demand Prediction Project
 
 This README file provides an overview and instructions for the Bike Sharing Demand Prediction project using AutoGluon.
 
