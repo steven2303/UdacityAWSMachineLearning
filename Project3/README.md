@@ -12,27 +12,24 @@ This project focuses on classifying different categories of clothing using AWS S
 1. **Clone the Repository**:
     Use the AWS SageMaker "Clone a Git Repository" option to clone the repository directly into your SageMaker environment.
 
-2. **Install Required Packages**:
-    Open a terminal in your SageMaker environment and run:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. **Download the Data**:
+2. **Download the Data**:
     Download the dataset from the following link: [Polyvore Dataset](https://github.com/xthan/polyvore-dataset)
 
-4. **Upload Data to S3**:
+3. **Upload Data to S3**:
     Upload the data to S3.
 
-5. **Open Jupyter Notebook**:
+4. **Open Jupyter Notebook**:
     In the SageMaker Jupyter environment, open the provided Jupyter notebook for the project and follow the steps.
 
 
 ## Files in the Project
 
-1. fetch_and_prepare_training_data.ipynb:
-2. MobileNetTraining.py:
-3. img/:
-4. 
+1. fetch_and_prepare_training_data.ipynb:Notebook for fetching and preparing the training data. This includes downloading the dataset, performing any necessary preprocessing, and organizing the data for model training.
+2. tuning&deploy_mobilenet.ipynb: Notebook for tuning and deploying the MobileNet model. This involves hyperparameter tuning, model optimization, and steps to deploy the model for inference. Additionally, it includes debugging and profiling using TVM to enhance performance and efficiency.
+3. MobileNetTraining.py: Python script used exclusively for hyperparameter tuning of the MobileNet model. This script includes functions for data extraction, transformations, and model training, but does not contain model persistence, debugging, or profiling blocks.
+4. MobileNetTrainingDebugProfile.py: Python script for debugging and profiling the MobileNet model training process. This script helps identify performance bottlenecks and optimize the training procedure. It is used to train the model with the best hyperparameters found, as well as for debugging and profiling.
+5. inference.py: Python script for performing inference using the trained MobileNet model. T
+6. img/: Directory containing images related to the project. This may include sample images from the dataset, visualizations of the model's performance, or other relevant graphics.
 
 ## Model Selection: MobileNet
 
@@ -54,7 +51,15 @@ Monitor the progress of the hyperparameter tuning jobs through the SageMaker con
 
 ![Hyperparameter Tuning Results](img/HT.png)
 
+We can observe the various training runs conducted during the hyperparameter tuning process.
+
 ![Best Hyperparameters](img/HT2.png)
+
+Status: The job has been marked as "Completed," indicating that the training process finished without any critical issues or interruptions.
+
+Objective Metric: The key metric for evaluating the model's performance was the F1-score on the validation set.
+
+Validation F1-Score: The model achieved a validation F1-score of 0.85. This score suggests that the model has a good balance between precision and recall, indicating effective performance in classifying the dataset.
 
 ![Logging](img/HT3.png)
 
@@ -70,7 +75,7 @@ After completing the hyperparameter tuning job, use the best hyperparameters to 
 
 It's important to monitor the training process and be prepared to debug any issues that arise. Below is an example plot showing the CrossEntropyLoss over training steps for both training and validation datasets, which helps in identifying potential issues.
 
-![Debugging Plot](img/debugging_plot.png)
+![Debugging Plot](img/Debugging.png)
 
 ### Interpreting the Debugging Plot
 
@@ -107,4 +112,19 @@ If you observe any anomalous behavior in the plot, follow these steps to debug t
     - Try different combinations of hyperparameters to see if the issue persists. 
 
 
+## Model Deployment
 
+Once the model is trained and optimized, the next step is to deploy it to a SageMaker endpoint.
+
+![Endpoint](img/Endpoint.png)
+
+### Visualization of Image Inferences
+
+The following plot displays images along with their actual and predicted categories. Each image is displayed with a title indicating the actual category and the predicted label. The title color is green if the prediction is correct and red if it is incorrect.
+
+![Inference](img/Deployment.png)
+
+
+## Conclusion
+
+This project provides a comprehensive guide to building, training, and deploying an image classification model using AWS SageMaker. The steps include data preparation, hyperparameter tuning, model profiling, deployment, and inference visualization, ensuring optimal performance and reliability of your model.
