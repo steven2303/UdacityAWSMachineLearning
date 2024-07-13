@@ -19,7 +19,7 @@ This project focuses on classifying different categories of clothing using AWS S
     Upload the data to S3.
 
 4. **Open Jupyter Notebook**:
-    In the SageMaker Jupyter environment, open the provided Jupyter notebook for the project and follow the steps.
+    In the SageMaker Jupyter environment, open the provided Jupyter notebook for the project and follow the steps. First, execute fetch_and_prepare_training_data.ipynb to download and preprocess the dataset. Then, run tuning&deploy_mobilenet.ipynb for hyperparameter tuning, model optimization, and deployment, including debugging and profiling using TVM.
 
 
 ## Files in the Project
