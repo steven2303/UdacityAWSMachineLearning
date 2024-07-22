@@ -31,6 +31,9 @@ The `t2.xlarge` instance offers the following specifications:
 
 ![EC2 Training](img/ec2-training.png)
 
+In ec2train1.py, the training code is designed to run directly on an EC2 instance, using standard Python libraries and PyTorch as a machine learning frameworks without any SageMaker-specific features.
+
+In contrast, the code in Step 1, leverages SageMaker's built-in functionalities and abstractions to simplify the training and deployment process. This includes using SageMaker's Estimator classes, automatic data handling, distributed training support, and easy deployment options, focusing more on configuring the training job and utilizing SageMaker's managed infrastructure.
 
 ## Lambda function setup
 
