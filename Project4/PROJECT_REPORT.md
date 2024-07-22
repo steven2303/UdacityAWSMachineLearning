@@ -17,7 +17,7 @@ We chose the `ml.t3.medium` instance due to its cost-efficiency and sufficient c
 
 ## Endpoint Deployment
 
-![Deployed Endpoint](img/inference_endpoint.png)
+![Deployed Endpoint](img/inference-endpoint.png)
 
 
 ## Model Training on EC2
