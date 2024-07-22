@@ -1,4 +1,3 @@
-
 import base64
 import logging
 import json
@@ -10,13 +9,10 @@ logger.setLevel(logging.DEBUG)
 print('Loading Lambda function')
 
 runtime=boto3.Session().client('sagemaker-runtime')
-endpoint_Name='BradTestEndpoint'
+endpoint_Name='pytorch-inference-2024-07-21-23-01-01-975'
 
 def lambda_handler(event, context):
 
-    #x=event['content']
-    #aa=x.encode('ascii')
-    #bs=base64.b64decode(aa)
     print('Context:::',context)
     print('EventType::',type(event))
     bs=event
@@ -25,7 +21,6 @@ def lambda_handler(event, context):
     response=runtime.invoke_endpoint(EndpointName=endpoint_Name,
                                     ContentType="application/json",
                                     Accept='application/json',
-                                    #Body=bytearray(x)
                                     Body=json.dumps(bs))
     
     result=response['Body'].read().decode('utf-8')
@@ -37,6 +32,4 @@ def lambda_handler(event, context):
         'type-result':str(type(result)),
         'COntent-Type-In':str(context),
         'body' : json.dumps(sss)
-        #'updated_result':str(updated_result)
-
         }
