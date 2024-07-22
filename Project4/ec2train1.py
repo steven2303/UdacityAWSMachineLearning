@@ -131,8 +131,8 @@ def create_data_loaders(data, batch_size):
     
     return train_data_loader, test_data_loader, validation_data_loader
 
-batch_size=2
-learning_rate=1e-4
+batch_size=64
+learning_rate=0.022323911915286477
 train_loader, test_loader, validation_loader=create_data_loaders('dogImages',batch_size)
 model=net()
 
